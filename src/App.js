@@ -10,16 +10,16 @@ function App() {
     <div>
       <Navbar />
       <SearchBar />
-      <div className="mx-20">
-        <div className="grid  sm:lg:grid-rows-1 lg:grid-rows-2 py-20 lg:grid-flow-col place-content-center gap-20">
-          <Business />
-          <Business />
-          <Business />
-          <Business />
-          <Business />
-          <Business />
-        </div>
+
+      <div className="grid grid-flow-col xs:grid-flow-row grid-rows-3 xs:grid-rows-1 md:grid-rows-3 lg:grid-rows-2 gap-8 xs:gap-8 md:gap-6 xl:gap-10 2xl:gap-24 justify-center my-9">
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
       </div>
+
       <Footer />
     </div>
   );

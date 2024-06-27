@@ -6,8 +6,8 @@ const appStyle = {
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
-      <a className="btn btn-ghost text-xl" style={appStyle}>
+    <div className="navbar lg:px-5 justify-center bg-neutral-600">
+      <a className="text-5xl text-white" style={appStyle}>
         Ravenous
       </a>
     </div>

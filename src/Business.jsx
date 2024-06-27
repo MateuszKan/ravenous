@@ -1,24 +1,27 @@
 import React from "react";
-import "./App.css";
+import Data from "./Data";
 
 const Business = () => {
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-white rounded-none w-72 h-80 object-fill border-4 border-white">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-        />
+        <img src={Data.imageSrc} alt="Restaurant" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
-          Shoes!
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title text-black">{Data.name}</h2>
+        <p>
+          {Data.address} {Data.city} {Data.state} {Data.zipCode}
+        </p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+          <p>
+            <span className="text-black font-bold">{Data.category} </span>
+            <span className="text-amber-950 font-medium">
+              {Data.rating} stars
+            </span>{" "}
+            <span className="text-black font-light">
+              {Data.reviewCount} reviews
+            </span>
+          </p>
         </div>
       </div>
     </div>
