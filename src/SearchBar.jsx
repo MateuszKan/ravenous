@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useJsApiLoader } from "@react-google-maps/api";
 
-const libraries = ['places']; // Google Places Library
+const libraries = ['places'];
 
 const SearchBar = ({ onInputSubmit }) => {
   const [term, setTerm] = useState("");
   const [location, setLocation] = useState("");
-  const [sortBy, setSortBy] = useState("best_match"); // Default sorting option
+  const [sortBy, setSortBy] = useState("best_match");
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyBPAxggTIE0IM7HBfd6qayxEzwCLcn5Db4", // Replace with your API key
+    googleMapsApiKey: "AIzaSyBPAxggTIE0IM7HBfd6qayxEzwCLcn5Db4",
     libraries
   });
 
