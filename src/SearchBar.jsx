@@ -9,7 +9,7 @@ const SearchBar = ({ onInputSubmit }) => {
   const [sortBy, setSortBy] = useState("best_match");
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "REACT_APP_GOOGLE_API_KEY",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
     libraries
   });
 

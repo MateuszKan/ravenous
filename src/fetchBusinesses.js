@@ -4,7 +4,7 @@ const fetchBusinesses = (location, term, sortBy) => {
     headers: {
       accept: "application/json",
       Authorization:
-        "Bearer REACT_APP_YELP_API_KEY",
+        `Bearer ${process.env.REACT_APP_YELP_API_KEY}`,
     },
   };
 
