@@ -62,6 +62,7 @@ const SearchBar = ({ onInputSubmit }) => {
           className="tabs xs:tabs-xs mb-10 2xl:mb-20 xl:mb-14 tabs-lg tabs-bordered"
         >
           <a
+            href="#best_match"
             role="tab"
             className={`tab text-white ${
               sortBy === "best_match" ? "tab-active" : "font-medium"
@@ -71,6 +72,7 @@ const SearchBar = ({ onInputSubmit }) => {
             Best Match
           </a>
           <a
+            href="#rating"
             role="tab"
             className={`tab text-white ${
               sortBy === "rating" ? "tab-active" : "font-medium"
@@ -80,6 +82,7 @@ const SearchBar = ({ onInputSubmit }) => {
             Highest Rated
           </a>
           <a
+            href="#review_count"
             role="tab"
             className={`tab text-white ${
               sortBy === "review_count" ? "tab-active" : "font-medium"
